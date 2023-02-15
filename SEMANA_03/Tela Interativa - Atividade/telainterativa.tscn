@@ -87,10 +87,10 @@ margin_bottom = 231.0
 [node name="minhaLista" type="RichTextLabel" parent="ColorRect3"]
 modulate = Color( 0, 0, 0, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
-margin_left = 13.0
-margin_top = 5.0
-margin_right = 397.0
-margin_bottom = 107.0
+margin_left = 12.0
+margin_top = 11.0
+margin_right = 396.0
+margin_bottom = 113.0
 
 [node name="botãoTexto" type="Button" parent="."]
 margin_left = 365.0
@@ -127,8 +127,8 @@ margin_top = 10.0
 margin_right = 571.0
 margin_bottom = 110.0
 
-[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_boto1_pressed"]
 [connection signal="pressed" from="botãoListaUsuário" to="." method="_on_botoListaUsurio_pressed"]
+[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_boto1_pressed"]
 [connection signal="pressed" from="botãoMinhaLista" to="." method="_on_botoMinhaLista_pressed"]
 [connection signal="pressed" from="botãoMinhaLista" to="." method="_on_boto2_pressed"]
 [connection signal="pressed" from="botãoTexto" to="." method="_on_botoTexto_pressed"]
