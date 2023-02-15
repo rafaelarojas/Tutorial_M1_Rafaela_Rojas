@@ -1,0 +1,134 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://telainterativa.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="fundoDaTela" type="ColorRect" parent="."]
+margin_left = -64.0
+margin_top = -15.0
+margin_right = 1096.0
+margin_bottom = 632.0
+color = Color( 0.901961, 0.533333, 0.815686, 1 )
+
+[node name="botãoListaUsuário" type="Button" parent="."]
+margin_left = 548.0
+margin_top = 236.0
+margin_right = 693.0
+margin_bottom = 269.0
+text = "Clique aqui "
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="editUsuario" type="LineEdit" parent="."]
+margin_left = 525.0
+margin_top = 104.0
+margin_right = 714.0
+margin_bottom = 230.0
+placeholder_text = "Digite aqui"
+
+[node name="label1" type="Label" parent="."]
+margin_left = 559.0
+margin_top = 80.0
+margin_right = 659.0
+margin_bottom = 105.0
+text = "Crie uma lista:"
+
+[node name="label2" type="Label" parent="."]
+margin_left = 770.0
+margin_top = 77.0
+margin_right = 928.0
+margin_bottom = 124.0
+text = "Sua lista aparecerá aqui:"
+
+[node name="ColorRect1" type="ColorRect" parent="."]
+margin_left = 746.0
+margin_top = 106.0
+margin_right = 964.0
+margin_bottom = 231.0
+
+[node name="listaUsuario" type="RichTextLabel" parent="ColorRect1"]
+modulate = Color( 0, 0, 0, 1 )
+light_mask = 31
+margin_left = 14.0
+margin_top = 11.0
+margin_right = 209.0
+margin_bottom = 106.0
+
+[node name="botãoMinhaLista" type="Button" parent="."]
+margin_left = 164.0
+margin_top = 239.0
+margin_right = 345.0
+margin_bottom = 271.0
+text = "Clique aqui"
+
+[node name="label3" type="Label" parent="."]
+margin_left = 126.0
+margin_top = 77.0
+margin_right = 385.0
+margin_bottom = 125.0
+text = "clique no botão para mostrar minha lista"
+
+[node name="label4" type="Label" parent="."]
+margin_left = 280.0
+margin_top = 33.0
+margin_right = 1103.0
+margin_bottom = 106.0
+rect_pivot_offset = Vector2( 447, 230 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 54.0
+margin_top = 106.0
+margin_right = 461.0
+margin_bottom = 231.0
+
+[node name="minhaLista" type="RichTextLabel" parent="ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 13.0
+margin_top = 5.0
+margin_right = 397.0
+margin_bottom = 107.0
+
+[node name="botãoTexto" type="Button" parent="."]
+margin_left = 365.0
+margin_top = 549.0
+margin_right = 649.0
+margin_bottom = 591.0
+text = "Clique aqui"
+
+[node name="editTexto" type="LineEdit" parent="."]
+margin_left = 218.0
+margin_top = 470.0
+margin_right = 808.0
+margin_bottom = 539.0
+placeholder_text = "Digite aqui"
+
+[node name="label5" type="Label" parent="."]
+margin_left = 401.0
+margin_top = 311.0
+margin_right = 632.0
+margin_bottom = 325.0
+text = "Clique no botão para ver o seu texto"
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = 220.0
+margin_top = 337.0
+margin_right = 807.0
+margin_bottom = 459.0
+
+[node name="textoUsuario" type="RichTextLabel" parent="ColorRect4"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 18.0
+margin_top = 10.0
+margin_right = 571.0
+margin_bottom = 110.0
+
+[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_boto1_pressed"]
+[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_botoListaUsurio_pressed"]
+[connection signal="pressed" from="botãoMinhaLista" to="." method="_on_botoMinhaLista_pressed"]
+[connection signal="pressed" from="botãoMinhaLista" to="." method="_on_boto2_pressed"]
+[connection signal="pressed" from="botãoTexto" to="." method="_on_botoTexto_pressed"]
