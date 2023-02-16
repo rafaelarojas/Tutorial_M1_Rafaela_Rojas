@@ -127,8 +127,8 @@ margin_top = 10.0
 margin_right = 571.0
 margin_bottom = 110.0
 
-[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_botoListaUsurio_pressed"]
 [connection signal="pressed" from="botãoListaUsuário" to="." method="_on_boto1_pressed"]
-[connection signal="pressed" from="botãoMinhaLista" to="." method="_on_botoMinhaLista_pressed"]
+[connection signal="pressed" from="botãoListaUsuário" to="." method="_on_botoListaUsurio_pressed"]
 [connection signal="pressed" from="botãoMinhaLista" to="." method="_on_boto2_pressed"]
+[connection signal="pressed" from="botãoMinhaLista" to="." method="_on_botoMinhaLista_pressed"]
 [connection signal="pressed" from="botãoTexto" to="." method="_on_botoTexto_pressed"]
