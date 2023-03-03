@@ -76,9 +76,9 @@ rect_scale = Vector2( 1.5, 1.5 )
 text = "1. Escreva um número abaixo:"
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 505.0
+margin_left = 527.0
 margin_top = 85.0
-margin_right = 832.0
+margin_right = 854.0
 margin_bottom = 133.0
 rect_scale = Vector2( 1.5, 1.5 )
 text = "2. Escreva seu nome abaixo 
