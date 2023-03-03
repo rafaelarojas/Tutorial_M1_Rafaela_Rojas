@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Atividade código"
+run/main_scene="res://atividade.tscn"
 config/icon="res://icon.png"
 
 [gui]
