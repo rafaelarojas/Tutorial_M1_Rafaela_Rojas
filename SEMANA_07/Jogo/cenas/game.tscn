@@ -1,0 +1,490 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://assets/tileset.png" type="Texture" id=1]
+[ext_resource path="res://assets/back.png" type="Texture" id=2]
+[ext_resource path="res://assets/atlas-props.png" type="Texture" id=3]
+[ext_resource path="res://assets/personagem/left4.png" type="Texture" id=4]
+[ext_resource path="res://cenas/emma.gd" type="Script" id=5]
+[ext_resource path="res://assets/personagem/left8.png" type="Texture" id=6]
+[ext_resource path="res://assets/personagem/left6.png" type="Texture" id=7]
+[ext_resource path="res://assets/personagem/left9.png" type="Texture" id=8]
+[ext_resource path="res://assets/personagem/left7.png" type="Texture" id=9]
+[ext_resource path="res://assets/personagem/left3.png" type="Texture" id=10]
+[ext_resource path="res://assets/personagem/left5.png" type="Texture" id=11]
+[ext_resource path="res://assets/personagem/left2.png" type="Texture" id=12]
+[ext_resource path="res://assets/personagem/right1.png" type="Texture" id=13]
+[ext_resource path="res://assets/personagem/right2.png" type="Texture" id=14]
+[ext_resource path="res://assets/personagem/right3.png" type="Texture" id=15]
+[ext_resource path="res://assets/personagem/right7.png" type="Texture" id=16]
+[ext_resource path="res://assets/personagem/right8.png" type="Texture" id=17]
+[ext_resource path="res://assets/personagem/right9.png" type="Texture" id=18]
+[ext_resource path="res://assets/personagem/right6.png" type="Texture" id=19]
+[ext_resource path="res://assets/personagem/right10.png" type="Texture" id=20]
+[ext_resource path="res://assets/personagem/right5.png" type="Texture" id=21]
+[ext_resource path="res://assets/personagem/right4.png" type="Texture" id=22]
+[ext_resource path="res://assets/personagem/jump_left.png" type="Texture" id=23]
+[ext_resource path="res://assets/personagem/jump_right.png" type="Texture" id=24]
+[ext_resource path="res://assets/personagem/idle/player-idle-1.png" type="Texture" id=25]
+[ext_resource path="res://assets/personagem/idle/player-idle-4.png" type="Texture" id=26]
+[ext_resource path="res://assets/personagem/idle/player-idle-2.png" type="Texture" id=27]
+[ext_resource path="res://assets/personagem/idle/player-idle-3.png" type="Texture" id=28]
+[ext_resource path="res://assets/Sprite sheet for Basic Pack.png" type="Texture" id=29]
+[ext_resource path="res://font/NicoBold-Regular.otf" type="DynamicFontData" id=30]
+[ext_resource path="res://assets/Image.png" type="Texture" id=31]
+[ext_resource path="res://assets/plataformas.png" type="Texture" id=32]
+[ext_resource path="res://cenas/game.gd" type="Script" id=33]
+[ext_resource path="res://assets/Premade dialog box  big.png" type="Texture" id=34]
+[ext_resource path="res://assets/rosto_personagem.png" type="Texture" id=35]
+[ext_resource path="res://assets/personagem/crouch/player-crouch-1.png" type="Texture" id=36]
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 30 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 9.36478, 17 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 21.6367, 10 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 20.9899, 10 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 34.2625, 13.5 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 31.9036, 13.0769 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 124.512, 10.0606 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 38.5153, 74.4151 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=10]
+radius = 13.4684
+height = 23.5386
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "idle_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "idle_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "jump_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "jump_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "run_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "run_right",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 48.0
+height = 47.9999
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 30 )
+
+[sub_resource type="DynamicFont" id=14]
+font_data = ExtResource( 30 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_vertical_guides_": [ 592.0 ]
+}
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 680, 332.5 )
+scale = Vector2( 4.44792, 7.10417 )
+texture = ExtResource( 2 )
+
+[node name="floresta" type="Sprite" parent="."]
+position = Vector2( 2032, 128 )
+scale = Vector2( 1.74677, 3.65417 )
+texture = ExtResource( 31 )
+
+[node name="floresta1" type="Sprite" parent="floresta"]
+position = Vector2( 677.823, 1.7103 )
+scale = Vector2( 1.19717, 1 )
+texture = ExtResource( 31 )
+
+[node name="Image" type="Sprite" parent="floresta"]
+position = Vector2( 1351.06, 1.7103 )
+texture = ExtResource( 31 )
+
+[node name="grama" type="Sprite" parent="."]
+position = Vector2( 0, 608 )
+scale = Vector2( 12.9191, 12.6667 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama2" type="Sprite" parent="grama"]
+position = Vector2( 63.024, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama3" type="Sprite" parent="grama"]
+position = Vector2( 47.268, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama4" type="Sprite" parent="grama"]
+position = Vector2( 31.514, 0 )
+scale = Vector2( 1.02211, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama5" type="Sprite" parent="grama"]
+position = Vector2( 15.756, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama6" type="Sprite" parent="grama"]
+position = Vector2( 109.229, 0 )
+scale = Vector2( 1.15158, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama7" type="Sprite" parent="grama"]
+position = Vector2( 92.5666, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="grama8" type="Sprite" parent="grama"]
+position = Vector2( 78.7801, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 41.9968, 12.0577, 28.9898, 24.4914 )
+
+[node name="chão" type="Sprite" parent="grama"]
+position = Vector2( 143.663, -3.78947 )
+scale = Vector2( 0.927423, 0.268513 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 229.79, 236.317, 81.1081, 42.6074 )
+
+[node name="instrução" type="Label" parent="."]
+margin_left = 320.0
+margin_top = 128.0
+margin_right = 545.0
+margin_bottom = 163.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Utilize os seguintes botões
+para jogar e interagir:"
+align = 1
+
+[node name="up" type="Sprite" parent="instrução"]
+position = Vector2( 80, 52 )
+scale = Vector2( 2.38235, 2.25 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 270.386, 31.779, 17.9438, 16.5165 )
+
+[node name="left" type="Sprite" parent="instrução"]
+position = Vector2( 56, 72 )
+scale = Vector2( 2.68182, 2.25 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 273.351, 15.5227, 11.7487, 16.0414 )
+
+[node name="right" type="Sprite" parent="instrução"]
+position = Vector2( 104, 72 )
+scale = Vector2( 2.65385, 2 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 273.049, -0.780883, 13.0373, 16.6434 )
+
+[node name="enter" type="Sprite" parent="instrução"]
+position = Vector2( 152, 52 )
+scale = Vector2( 2.13281, 1.14724 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 705.831, 31.1166, 29.5063, 32.7027 )
+
+[node name="enter2" type="Sprite" parent="instrução"]
+position = Vector2( 158, 76 )
+scale = Vector2( 1.57143, 1.625 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 706.421, 40.4046, 28.8503, 22.5785 )
+
+[node name="enterlabel" type="Label" parent="instrução"]
+margin_left = 96.0
+margin_top = 48.0
+margin_right = 321.0
+margin_bottom = 83.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.666667, 0.47451, 0.34902, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "ENTER"
+align = 1
+
+[node name="plataformas" type="Sprite" parent="."]
+position = Vector2( 2552, 416 )
+scale = Vector2( 4.77132, 4.85208 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 582.51, 43.4018, 81.9516, 53.1013 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataformas"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataformas/StaticBody2D"]
+position = Vector2( 1.67664, -3.29755 )
+scale = Vector2( 2.49691, 0.549593 )
+shape = SubResource( 9 )
+
+[node name="plataforma2" type="Sprite" parent="plataformas/StaticBody2D"]
+position = Vector2( 268.27, 6.59511 )
+scale = Vector2( 0.416178, 0.364759 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 39, 111, 70, 63 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataformas/StaticBody2D/plataforma2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataformas/StaticBody2D/plataforma2/StaticBody2D"]
+position = Vector2( -1.49268, -4.52019 )
+shape = SubResource( 11 )
+
+[node name="Plataformas" type="Sprite" parent="plataformas"]
+position = Vector2( 320.247, -4.94633 )
+scale = Vector2( 0.519224, 0.480841 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 592.747, 49.9877, 66.8065, 47.899 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataformas/Plataformas"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataformas/Plataformas/StaticBody2D"]
+position = Vector2( -1.61475, -6.85789 )
+shape = SubResource( 12 )
+
+[node name="sprites" type="Sprite" parent="."]
+position = Vector2( 1648, 360 )
+scale = Vector2( 2.62907, 3.06264 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 180, 39, 144, 133 )
+
+[node name="pedra1" type="Sprite" parent="sprites"]
+position = Vector2( 231.26, 67.2622 )
+scale = Vector2( 0.943756, 1.04951 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 811, 87, 48, 56 )
+
+[node name="cerca1" type="Sprite" parent="sprites"]
+position = Vector2( 82.1582, 39.1819 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 575, 178, 160, 50 )
+
+[node name="Plataformas4" type="Sprite" parent="sprites"]
+position = Vector2( 438.178, 65.3031 )
+scale = Vector2( 1.05325, 0.861349 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 762, 88, 44, 47 )
+
+[node name="chão" type="Sprite" parent="."]
+position = Vector2( 3200, 568 )
+scale = Vector2( 11.9174, 2.47619 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 229.79, 236.317, 81.1081, 42.6074 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chão"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chão/StaticBody2D"]
+position = Vector2( -1.35757, -4.84616 )
+shape = SubResource( 8 )
+
+[node name="chão3" type="Sprite" parent="chão"]
+position = Vector2( 122.845, -6.46153 )
+texture = ExtResource( 32 )
+region_enabled = true
+region_rect = Rect2( 227.93, 230.697, 89.0447, 53.1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="chão/chão3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chão/chão3/StaticBody2D"]
+position = Vector2( -0.678802, -3.23077 )
+shape = SubResource( 13 )
+
+[node name="floor" type="StaticBody2D" parent="."]
+position = Vector2( 64, 568 )
+scale = Vector2( 8.12388, 5.675 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="floor"]
+position = Vector2( 147.713, -1.40969 )
+shape = SubResource( 3 )
+
+[node name="casa" type="KinematicBody2D" parent="."]
+position = Vector2( 24, 8 )
+
+[node name="casa" type="Sprite" parent="casa"]
+position = Vector2( 48, 264 )
+scale = Vector2( 5.03571, 4.58621 )
+texture = ExtResource( 3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( -12.439, 221.209, 126.985, 116.634 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="casa"]
+position = Vector2( 120, 248 )
+scale = Vector2( 3.97619, 3.65517 )
+shape = SubResource( 4 )
+
+[node name="raposa" type="AnimatedSprite" parent="."]
+position = Vector2( 1144, 424 )
+scale = Vector2( 5.81819, 5.125 )
+frames = SubResource( 5 )
+animation = "idle"
+speed_scale = 0.5
+playing = true
+
+[node name="sprite1" type="Sprite" parent="raposa"]
+position = Vector2( 19.9375, -5.30512 )
+scale = Vector2( 0.616378, 0.278186 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 705.831, 31.1166, 29.5063, 32.7027 )
+
+[node name="sprite2" type="Sprite" parent="raposa"]
+position = Vector2( 22, 2.20474 )
+scale = Vector2( 0.429688, 0.519721 )
+texture = ExtResource( 29 )
+region_enabled = true
+region_rect = Rect2( 706.421, 40.4046, 28.8503, 22.5785 )
+
+[node name="ENTER" type="Label" parent="raposa"]
+margin_left = 15.1251
+margin_top = -6.63416
+margin_right = 71.1251
+margin_bottom = 9.36584
+rect_scale = Vector2( 0.15, 0.15 )
+custom_colors/font_color = Color( 0.666667, 0.47451, 0.34902, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "ENTER"
+align = 1
+
+[node name="Area2D" type="Area2D" parent="raposa"]
+position = Vector2( 6.875, 7.02439 )
+scale = Vector2( 0.583334, 0.560976 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="raposa/Area2D"]
+position = Vector2( -11.1274, -7.63638 )
+rotation = 1.51936
+shape = SubResource( 10 )
+
+[node name="emma" type="KinematicBody2D" parent="."]
+position = Vector2( 104, -88 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="emma" type="AnimatedSprite" parent="emma"]
+position = Vector2( 299.522, 500 )
+scale = Vector2( 8.35221, 7.59998 )
+frames = SubResource( 1 )
+animation = "idle_right"
+speed_scale = 2.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="emma"]
+position = Vector2( 296, 504 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="emma"]
+position = Vector2( 512, 424 )
+current = true
+
+[node name="dialogoEmma" type="CanvasLayer" parent="."]
+
+[node name="caixaDialogo" type="Sprite" parent="dialogoEmma"]
+position = Vector2( 496, 536 )
+scale = Vector2( 2.44079, 2.63281 )
+texture = ExtResource( 34 )
+
+[node name="emma" type="Label" parent="dialogoEmma/caixaDialogo"]
+margin_left = -85.2183
+margin_top = -24.3086
+margin_right = -34.2183
+margin_bottom = -4.30851
+rect_scale = Vector2( 0.7, 0.7 )
+custom_colors/font_color = Color( 0.419608, 0.294118, 0.356863, 1 )
+custom_fonts/font = SubResource( 15 )
+text = "Emma"
+
+[node name="luke" type="Label" parent="dialogoEmma/caixaDialogo"]
+margin_left = -85.2183
+margin_top = -24.3086
+margin_right = -34.2183
+margin_bottom = -4.30851
+rect_scale = Vector2( 0.7, 0.7 )
+custom_colors/font_color = Color( 0.419608, 0.294118, 0.356863, 1 )
+custom_fonts/font = SubResource( 15 )
+text = "Luke"
+
+[node name="textodialogo" type="RichTextLabel" parent="dialogoEmma/caixaDialogo"]
+margin_left = -85.0
+margin_top = -9.0
+margin_right = 358.0
+margin_bottom = 58.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/default_color = Color( 0.458824, 0.345098, 0.4, 1 )
+custom_fonts/normal_font = SubResource( 14 )
+bbcode_enabled = true
+
+[node name="rostoLuke" type="Sprite" parent="dialogoEmma"]
+position = Vector2( 200, 520 )
+scale = Vector2( 3.76515, 3.75 )
+texture = ExtResource( 36 )
+
+[node name="rostoEmma" type="Sprite" parent="dialogoEmma"]
+position = Vector2( 198.528, 533.598 )
+scale = Vector2( 1.704, 1.42493 )
+texture = ExtResource( 35 )
+
+[connection signal="body_entered" from="raposa/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="raposa/Area2D" to="." method="_on_Area2D_body_exited"]
