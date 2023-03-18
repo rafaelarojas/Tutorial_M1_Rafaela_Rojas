@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/UI Settings Buttons.png-596cc25ce6bd9ce052e231768ff29e35.stex"
+path="res://.import/UI Settings Buttons.png-34a4538b72d3f7d07fe8b6ba1db5b6fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI Settings Buttons.png"
-dest_files=[ "res://.import/UI Settings Buttons.png-596cc25ce6bd9ce052e231768ff29e35.stex" ]
+source_file="res://assets/ui_icons/UI Settings Buttons.png"
+dest_files=[ "res://.import/UI Settings Buttons.png-34a4538b72d3f7d07fe8b6ba1db5b6fb.stex" ]
 
 [params]
 

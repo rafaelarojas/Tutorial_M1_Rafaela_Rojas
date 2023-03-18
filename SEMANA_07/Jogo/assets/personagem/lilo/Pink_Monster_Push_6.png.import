@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Pink_Monster_Push_6.png-1963ad9135ca852508a4325f1e5fec5d.stex"
+path="res://.import/Pink_Monster_Push_6.png-9ef1d92c4247ff740c5f46920987710b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Pink_Monster_Push_6.png"
-dest_files=[ "res://.import/Pink_Monster_Push_6.png-1963ad9135ca852508a4325f1e5fec5d.stex" ]
+source_file="res://assets/personagem/lilo/Pink_Monster_Push_6.png"
+dest_files=[ "res://.import/Pink_Monster_Push_6.png-9ef1d92c4247ff740c5f46920987710b.stex" ]
 
 [params]
 

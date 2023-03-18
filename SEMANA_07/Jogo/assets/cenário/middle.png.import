@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/middle.png-0f784a6fcaea6e1a127677138c23c118.stex"
+path="res://.import/middle.png-df3f5f7802be24a8001153c00e8da40d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/middle.png"
-dest_files=[ "res://.import/middle.png-0f784a6fcaea6e1a127677138c23c118.stex" ]
+source_file="res://assets/cenário/middle.png"
+dest_files=[ "res://.import/middle.png-df3f5f7802be24a8001153c00e8da40d.stex" ]
 
 [params]
 

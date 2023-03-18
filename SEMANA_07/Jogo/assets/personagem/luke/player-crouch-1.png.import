@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player-crouch-1.png-7c3a4c9ebd694dfe160543a8b252cd34.stex"
+path="res://.import/player-crouch-1.png-1c483912c3999be10f53aa935bc7ddcc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/crouch/player-crouch-1.png"
-dest_files=[ "res://.import/player-crouch-1.png-7c3a4c9ebd694dfe160543a8b252cd34.stex" ]
+source_file="res://assets/personagem/luke/player-crouch-1.png"
+dest_files=[ "res://.import/player-crouch-1.png-1c483912c3999be10f53aa935bc7ddcc.stex" ]
 
 [params]
 

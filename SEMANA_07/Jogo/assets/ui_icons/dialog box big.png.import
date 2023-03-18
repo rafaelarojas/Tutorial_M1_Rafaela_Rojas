@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dialog box big.png-2b1d0487ba1318597d35f21f9d94a336.stex"
+path="res://.import/dialog box big.png-4e6881e181df8623cd48324b529b1a17.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/dialog box big.png"
-dest_files=[ "res://.import/dialog box big.png-2b1d0487ba1318597d35f21f9d94a336.stex" ]
+source_file="res://assets/ui_icons/dialog box big.png"
+dest_files=[ "res://.import/dialog box big.png-4e6881e181df8623cd48324b529b1a17.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/UI Big Play Button.png-32fcd3e4f3a6d6452e71e0cd9b40a0c3.stex"
+path="res://.import/UI Big Play Button.png-14dd3b7644c5dbe843c3d7e4ffa1c16d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI Big Play Button.png"
-dest_files=[ "res://.import/UI Big Play Button.png-32fcd3e4f3a6d6452e71e0cd9b40a0c3.stex" ]
+source_file="res://assets/ui_icons/UI Big Play Button.png"
+dest_files=[ "res://.import/UI Big Play Button.png-14dd3b7644c5dbe843c3d7e4ffa1c16d.stex" ]
 
 [params]
 

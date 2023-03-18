@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walk and idle.png-6fde1e4eb547e56eb0d631fbb22d6b87.stex"
+path="res://.import/walk and idle.png-7a393c32c787b61dfc24c3a733d58670.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/walk and idle.png"
-dest_files=[ "res://.import/walk and idle.png-6fde1e4eb547e56eb0d631fbb22d6b87.stex" ]
+source_file="res://assets/personagem/emma/walk and idle.png"
+dest_files=[ "res://.import/walk and idle.png-7a393c32c787b61dfc24c3a733d58670.stex" ]
 
 [params]
 

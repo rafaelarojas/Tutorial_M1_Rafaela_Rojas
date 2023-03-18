@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/personagem_andando.png-9b56e565923fc458660c589203f93658.stex"
+path="res://.import/personagem_andando.png-d29179ccbf28dbe1a18233c40352c59d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem_andando.png"
-dest_files=[ "res://.import/personagem_andando.png-9b56e565923fc458660c589203f93658.stex" ]
+source_file="res://assets/personagem/emma/personagem_andando.png"
+dest_files=[ "res://.import/personagem_andando.png-d29179ccbf28dbe1a18233c40352c59d.stex" ]
 
 [params]
 

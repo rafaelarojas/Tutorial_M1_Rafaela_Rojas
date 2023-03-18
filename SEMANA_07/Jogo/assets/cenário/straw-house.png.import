@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/straw-house.png-05e72239d165d8af40cefe2fe46642c1.stex"
+path="res://.import/straw-house.png-b27dc9166c20a474ed6f71485bc72ce1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/straw-house.png"
-dest_files=[ "res://.import/straw-house.png-05e72239d165d8af40cefe2fe46642c1.stex" ]
+source_file="res://assets/cenário/straw-house.png"
+dest_files=[ "res://.import/straw-house.png-b27dc9166c20a474ed6f71485bc72ce1.stex" ]
 
 [params]
 

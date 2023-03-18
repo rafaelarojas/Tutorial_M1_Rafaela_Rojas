@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jump_right.png-b5ca2a87db10079d2084bbf8935db0cf.stex"
+path="res://.import/jump_right.png-355544c4df05e126c77117c74551cda8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/jump_right.png"
-dest_files=[ "res://.import/jump_right.png-b5ca2a87db10079d2084bbf8935db0cf.stex" ]
+source_file="res://assets/personagem/emma/jump_right.png"
+dest_files=[ "res://.import/jump_right.png-355544c4df05e126c77117c74551cda8.stex" ]
 
 [params]
 

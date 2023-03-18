@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gui_free.png-61f82ae838d21eb22639f9be5e333872.stex"
+path="res://.import/gui_free.png-0b21539fa95db03797014a2e82992231.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gui_free.png"
-dest_files=[ "res://.import/gui_free.png-61f82ae838d21eb22639f9be5e333872.stex" ]
+source_file="res://assets/ui_icons/gui_free.png"
+dest_files=[ "res://.import/gui_free.png-0b21539fa95db03797014a2e82992231.stex" ]
 
 [params]
 

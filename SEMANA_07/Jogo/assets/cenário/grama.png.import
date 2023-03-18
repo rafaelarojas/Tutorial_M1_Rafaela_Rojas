@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grama.png-2606d58d13b6629e185dae0c77cb2254.stex"
+path="res://.import/grama.png-a499afd6e1763e108d3e3fdfdd7554ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/grama.png"
-dest_files=[ "res://.import/grama.png-2606d58d13b6629e185dae0c77cb2254.stex" ]
+source_file="res://assets/cenário/grama.png"
+dest_files=[ "res://.import/grama.png-a499afd6e1763e108d3e3fdfdd7554ea.stex" ]
 
 [params]
 

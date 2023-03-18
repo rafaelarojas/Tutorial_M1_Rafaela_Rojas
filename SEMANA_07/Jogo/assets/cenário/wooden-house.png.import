@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden-house.png-f76054ab97bae3df9dfccf403441492b.stex"
+path="res://.import/wooden-house.png-1be0447185eb8ac2cf32be479a1da718.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wooden-house.png"
-dest_files=[ "res://.import/wooden-house.png-f76054ab97bae3df9dfccf403441492b.stex" ]
+source_file="res://assets/cenário/wooden-house.png"
+dest_files=[ "res://.import/wooden-house.png-1be0447185eb8ac2cf32be479a1da718.stex" ]
 
 [params]
 

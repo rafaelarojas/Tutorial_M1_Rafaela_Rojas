@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://assets/back.png" type="Texture" id=1]
-[ext_resource path="res://assets/rosto_personagem.png" type="Texture" id=2]
+[ext_resource path="res://assets/cenário/back.png" type="Texture" id=1]
+[ext_resource path="res://assets/personagem/rosto_personagem.png" type="Texture" id=2]
 [ext_resource path="res://font/FatPix-SVG.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://assets/botao_sombra.png" type="Texture" id=4]
-[ext_resource path="res://assets/Pink_Monster.png" type="Texture" id=5]
-[ext_resource path="res://assets/botao.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui_icons/botao_sombra.png" type="Texture" id=4]
+[ext_resource path="res://assets/personagem/lilo/Pink_Monster.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui_icons/botao.png" type="Texture" id=6]
 [ext_resource path="res://cenas/game_over.gd" type="Script" id=7]
 [ext_resource path="res://font/m6x11.ttf" type="DynamicFontData" id=8]
 

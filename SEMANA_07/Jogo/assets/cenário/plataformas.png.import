@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/plataformas.png-eb5af4a0b3c94d97224ba76ac156b3e1.stex"
+path="res://.import/plataformas.png-1c83293ffdaf70ea73ff9bf0b2289418.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plataformas.png"
-dest_files=[ "res://.import/plataformas.png-eb5af4a0b3c94d97224ba76ac156b3e1.stex" ]
+source_file="res://assets/cenário/plataformas.png"
+dest_files=[ "res://.import/plataformas.png-1c83293ffdaf70ea73ff9bf0b2289418.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tree-house.png-09517c653cf37cf7341fdb8b4d2c4172.stex"
+path="res://.import/tree-house.png-ed47aa354ebde54b17d6948b5b6cf520.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tree-house.png"
-dest_files=[ "res://.import/tree-house.png-09517c653cf37cf7341fdb8b4d2c4172.stex" ]
+source_file="res://assets/cenário/tree-house.png"
+dest_files=[ "res://.import/tree-house.png-ed47aa354ebde54b17d6948b5b6cf520.stex" ]
 
 [params]
 

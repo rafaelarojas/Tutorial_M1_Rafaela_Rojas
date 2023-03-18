@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/plant-house.png-cc59434ba369253915dddc702198d9c3.stex"
+path="res://.import/plant-house.png-823d438137a064b85f3594fb6f9d793f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plant-house.png"
-dest_files=[ "res://.import/plant-house.png-cc59434ba369253915dddc702198d9c3.stex" ]
+source_file="res://assets/cenário/plant-house.png"
+dest_files=[ "res://.import/plant-house.png-823d438137a064b85f3594fb6f9d793f.stex" ]
 
 [params]
 

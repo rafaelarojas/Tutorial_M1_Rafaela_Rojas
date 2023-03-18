@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player-idle-2.png-ae93f4ce6ede4a52eb345a13342edafa.stex"
+path="res://.import/player-idle-2.png-2e1038ac61d37a272986aa4003eb5766.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/idle/player-idle-2.png"
-dest_files=[ "res://.import/player-idle-2.png-ae93f4ce6ede4a52eb345a13342edafa.stex" ]
+source_file="res://assets/personagem/luke/player-idle-2.png"
+dest_files=[ "res://.import/player-idle-2.png-2e1038ac61d37a272986aa4003eb5766.stex" ]
 
 [params]
 

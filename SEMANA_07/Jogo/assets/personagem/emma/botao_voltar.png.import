@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botao_voltar.png-37ff344163d7b3a59a6987e5762068a7.stex"
+path="res://.import/botao_voltar.png-a9ff02a094ada00bb6489052a6cd06c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/botao_voltar.png"
-dest_files=[ "res://.import/botao_voltar.png-37ff344163d7b3a59a6987e5762068a7.stex" ]
+source_file="res://assets/personagem/emma/botao_voltar.png"
+dest_files=[ "res://.import/botao_voltar.png-a9ff02a094ada00bb6489052a6cd06c0.stex" ]
 
 [params]
 

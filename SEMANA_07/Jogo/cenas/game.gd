@@ -73,7 +73,6 @@ func _on_areaLilo_body_exited(body):
 	$lilo/ENTER.hide()
 	dentro = false
 	
-	
 func dialogo():
 	if dentro == true and Input.is_action_just_pressed("ui_accept"):
 		$dialogoEmma.show()
@@ -188,6 +187,7 @@ func _process(delta):
 		get_tree().change_scene("res://cenas/animacao.tscn")
 
 
-func _on_Area2D2_body_entered(body):
-	dentro = true
+
+
+func _on_area_body_entered(body):
 	get_tree().change_scene("res://cenas/game_over.tscn")

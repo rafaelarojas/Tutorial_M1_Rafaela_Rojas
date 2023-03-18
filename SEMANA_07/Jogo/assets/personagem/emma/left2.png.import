@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/left2.png-69fd7b8529c0c1827cef5930a95a550f.stex"
+path="res://.import/left2.png-da0bf3c41de4602b0366cb9aaedd90ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personagem/left2.png"
-dest_files=[ "res://.import/left2.png-69fd7b8529c0c1827cef5930a95a550f.stex" ]
+source_file="res://assets/personagem/emma/left2.png"
+dest_files=[ "res://.import/left2.png-da0bf3c41de4602b0366cb9aaedd90ab.stex" ]
 
 [params]
 

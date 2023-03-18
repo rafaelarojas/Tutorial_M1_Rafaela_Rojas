@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.stex"
+path="res://.import/Sprite sheet for Basic Pack.png-0f513ceead4de7c2d7096e821bf4a2bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprite sheet for Basic Pack.png"
-dest_files=[ "res://.import/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.stex" ]
+source_file="res://assets/ui_icons/Sprite sheet for Basic Pack.png"
+dest_files=[ "res://.import/Sprite sheet for Basic Pack.png-0f513ceead4de7c2d7096e821bf4a2bd.stex" ]
 
 [params]
 

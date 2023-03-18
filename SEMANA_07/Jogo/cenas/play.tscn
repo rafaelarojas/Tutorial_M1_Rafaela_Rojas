@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://assets/tileset.png" type="Texture" id=1]
-[ext_resource path="res://assets/moveis.png" type="Texture" id=2]
+[ext_resource path="res://assets/cenário/tileset.png" type="Texture" id=1]
+[ext_resource path="res://assets/cenário/moveis.png" type="Texture" id=2]
 [ext_resource path="res://font/m6x11.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://assets/rosto_personagem.png" type="Texture" id=4]
-[ext_resource path="res://assets/personagem_andando.png" type="Texture" id=5]
-[ext_resource path="res://assets/Premade dialog box  big.png" type="Texture" id=6]
+[ext_resource path="res://assets/personagem/rosto_personagem.png" type="Texture" id=4]
+[ext_resource path="res://assets/personagem/emma/personagem_andando.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui_icons/Premade dialog box  big.png" type="Texture" id=6]
 [ext_resource path="res://font/NicoBold-Regular.otf" type="DynamicFontData" id=7]
 [ext_resource path="res://cenas/play.gd" type="Script" id=8]
 

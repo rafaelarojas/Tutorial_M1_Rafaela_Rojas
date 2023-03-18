@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rosto_personagem.png-63d96f80f7dcad91dbdd0dc5a630097f.stex"
+path="res://.import/rosto_personagem.png-73851240126df3473405897a6ef29f86.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/rosto_personagem.png"
-dest_files=[ "res://.import/rosto_personagem.png-63d96f80f7dcad91dbdd0dc5a630097f.stex" ]
+source_file="res://assets/personagem/rosto_personagem.png"
+dest_files=[ "res://.import/rosto_personagem.png-73851240126df3473405897a6ef29f86.stex" ]
 
 [params]
 

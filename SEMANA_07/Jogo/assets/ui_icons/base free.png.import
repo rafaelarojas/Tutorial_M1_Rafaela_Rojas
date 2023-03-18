@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/base free.png-8c3a76bfa6fdc10028b1d3dcd45bbcd3.stex"
+path="res://.import/base free.png-4beb23a66b5426011c5db093f0c32c41.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/base free.png"
-dest_files=[ "res://.import/base free.png-8c3a76bfa6fdc10028b1d3dcd45bbcd3.stex" ]
+source_file="res://assets/ui_icons/base free.png"
+dest_files=[ "res://.import/base free.png-4beb23a66b5426011c5db093f0c32c41.stex" ]
 
 [params]
 
