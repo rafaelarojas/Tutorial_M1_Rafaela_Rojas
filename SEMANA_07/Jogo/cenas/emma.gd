@@ -4,7 +4,8 @@ extends KinematicBody2D
 
 var posicao = Vector2.ZERO #variável com duas medidas (x,y)
 var gravidade = 20 #variável para demostrar gravidade
-var jump_h = 600 #variável para altura do pulo
+var jump_h = 700
+ #variável para altura do pulo
 #var jump_count = 0 #váriável para quantidade de pulos
 
 func _physics_process(delta): 

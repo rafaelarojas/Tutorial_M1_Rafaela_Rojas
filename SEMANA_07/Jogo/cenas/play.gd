@@ -1,5 +1,6 @@
 extends Node2D
 
+#lista que guarda o diálogo da cen
 var texto = ["Onde está o lino?" , 
 "Linoooooo", 
 "Linoooo, onde você está?",
@@ -7,9 +8,6 @@ var texto = ["Onde está o lino?" ,
 "E agora? O que vou fazer sem o Lino? Será que ele está lá fora?"
  ]
 
-#var running = true
-
-#Array que contém o texto
 var index = 0 #variável que itera os elementos na lista
 
 func tamanho_elemento(array_element):
@@ -18,12 +16,12 @@ func tamanho_elemento(array_element):
 		cont += 1
 	return(cont)
 func _ready():
-	$Texto.text = texto[index] # texto do label = primeiro elemento da lista
+	$Texto.text = texto[index] #texto do label = primeiro elemento da lista
 	
 func _process(delta):
-	if $Texto.visible_characters < $Texto.get_total_character_count(): # se caracteres visíveis < total de caracteres
-		$Texto.visible_characters += 1 # adicionando caracteres visíveis
-	else: # se caracteres visíveis = total de caracteres
+	if $Texto.visible_characters < $Texto.get_total_character_count(): #se caracteres visíveis < total de caracteres
+		$Texto.visible_characters += 1 #adicionando caracteres visíveis
+	else: #se caracteres visíveis = total de caracteres
 		if index == 4 and Input.is_action_just_pressed("ui_accept") and $Texto.visible_characters == tamanho_elemento(texto[index]):
 				index += 1
 				
@@ -39,7 +37,7 @@ func _process(delta):
 				index += 1
 				
 		if index == 5:
-				get_tree().change_scene("res://cenas/game.tscn")	
+				get_tree().change_scene("res://cenas/game.tscn") #mudança de cena quando index == 5
 			
 		if Input.is_action_just_pressed("ui_accept"):
 			$Texto.visible_characters = $Texto.get_total_character_count() #mostrando texto inteiro

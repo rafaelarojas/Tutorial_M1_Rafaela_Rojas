@@ -31,7 +31,7 @@ texture = ExtResource( 2 )
 margin_left = 368.0
 margin_top = 304.0
 margin_right = 462.0
-margin_bottom = 340.0
+margin_bottom = 334.0
 rect_scale = Vector2( 3, 3 )
 texture_normal = ExtResource( 6 )
 texture_hover = ExtResource( 4 )
@@ -79,10 +79,10 @@ custom_fonts/font = SubResource( 1 )
 text = "Little"
 
 [node name="play" type="Label" parent="."]
-margin_left = 472.0
-margin_top = 328.0
-margin_right = 560.0
-margin_bottom = 373.0
+margin_left = 473.0
+margin_top = 327.0
+margin_right = 561.0
+margin_bottom = 372.0
 custom_colors/font_color = Color( 0.643137, 0.478431, 0.423529, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "PLAY"

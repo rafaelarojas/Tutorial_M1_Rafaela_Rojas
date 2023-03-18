@@ -1,25 +1,51 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/tileset.png" type="Texture" id=1]
-[ext_resource path="res://assets/moveis.png" type="Texture" id=2]
-[ext_resource path="res://font/m6x11.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/personagem/attack and die.png" type="Texture" id=2]
+[ext_resource path="res://assets/moveis.png" type="Texture" id=3]
 [ext_resource path="res://assets/rosto_personagem.png" type="Texture" id=4]
-[ext_resource path="res://assets/personagem_andando.png" type="Texture" id=5]
-[ext_resource path="res://assets/Premade dialog box  big.png" type="Texture" id=6]
+[ext_resource path="res://assets/Premade dialog box  big.png" type="Texture" id=5]
+[ext_resource path="res://cenas/animacao2.gd" type="Script" id=6]
 [ext_resource path="res://font/NicoBold-Regular.otf" type="DynamicFontData" id=7]
-[ext_resource path="res://cenas/play.gd" type="Script" id=8]
+[ext_resource path="res://font/m6x11.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://assets/Pink_Monster.png" type="Texture" id=9]
+[ext_resource path="res://assets/personagem_andando.png" type="Texture" id=10]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 72, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 24, 72, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 48, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 72, 24, 24 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=10]
 size = 25
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=11]
 size = 34
 outline_color = Color( 0.419608, 0.294118, 0.356863, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 8 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 8 )
+script = ExtResource( 6 )
 
 [node name="fundo" type="Sprite" parent="."]
 position = Vector2( 528, 288 )
@@ -272,65 +298,66 @@ region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
 [node name="Moveis" type="Sprite" parent="fundo"]
 position = Vector2( -2.67172, -2.62385 )
 scale = Vector2( 0.0989721, 0.151376 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 0.00753784, 0, 15.8843, 32.7143 )
 
 [node name="Moveis2" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( 42.8943, -13.6667 )
 scale = Vector2( 0.640284, 0.979167 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( -0.11097, 32.1772, 32.1306, 32.5262 )
 
 [node name="Moveis3" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( 18.7789, -6.66666 )
 scale = Vector2( 0.652859, 0.886111 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 45.4243, 32.0273, 20.8348, 15.8884 )
 
 [node name="Moveis4" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( 29.342, 21.3333 )
 scale = Vector2( 1.35707, 0.616667 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 64.2915, 113.217, 32.1079, 30.8488 )
 
 [node name="Moveis" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( 56.3366, 29.3333 )
 scale = Vector2( 0.678533, 0.718589 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( -1.54934, 68.6124, 17.404, 13.1019 )
 
 [node name="Moveis6" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( -8.21575, 33.3333 )
 scale = Vector2( 0.625674, 0.628788 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 47.5967, 153.203, 17.6566, 22.3031 )
 
 [node name="Moveis5" type="Sprite" parent="fundo/Moveis"]
 position = Vector2( 56.3366, 9.33334 )
 scale = Vector2( 0.665434, 0.681667 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 33.4541, 87.1896, 14.2751, 25.8126 )
 
-[node name="PersonagemAndando" type="Sprite" parent="."]
-position = Vector2( 440, 184 )
-scale = Vector2( 5.33333, 4.66667 )
-texture = ExtResource( 5 )
-region_enabled = true
-region_rect = Rect2( 3.3175, 49.4127, 18.4903, 24.1506 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 344, 168 )
+scale = Vector2( 5.08333, 5.08333 )
+frames = SubResource( 5 )
+frame = 1
+speed_scale = 0.3
+playing = true
 
-[node name="PremadeDialogBoxBig" type="Sprite" parent="."]
+[node name="caixaDialogo" type="Sprite" parent="."]
 position = Vector2( 528, 456 )
 scale = Vector2( 3.17105, 3.125 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 
-[node name="RostoPersonagem" type="Sprite" parent="PremadeDialogBoxBig"]
+[node name="RostoPersonagem" type="Sprite" parent="caixaDialogo"]
 position = Vector2( -122.556, -0.959991 )
 scale = Vector2( 0.585062, 0.53 )
 texture = ExtResource( 4 )
@@ -341,7 +368,7 @@ margin_top = 431.0
 margin_right = 952.0
 margin_bottom = 504.0
 custom_colors/default_color = Color( 0.458824, 0.345098, 0.4, 1 )
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 10 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 256.0
@@ -349,5 +376,19 @@ margin_top = 384.0
 margin_right = 324.0
 margin_bottom = 415.0
 custom_colors/font_color = Color( 0.458824, 0.345098, 0.4, 1 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 11 )
 text = "Emma"
+
+[node name="lino" type="Sprite" parent="."]
+position = Vector2( 472, 104 )
+scale = Vector2( 2, 1.75 )
+texture = ExtResource( 9 )
+
+[node name="emma" type="Sprite" parent="."]
+position = Vector2( 439.375, 169.625 )
+scale = Vector2( 5.82895, 5.46875 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 3.05627, 49.2351, 19.7007, 24.9542 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
